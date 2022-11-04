@@ -1,6 +1,5 @@
 import * as S from "./signin-styles";
 
-import { Formik } from "formik";
 import { Link } from "react-router-dom";
 
 import { EyeSlash, Eye, Envelope, LockSimple, SignIn } from "phosphor-react";
