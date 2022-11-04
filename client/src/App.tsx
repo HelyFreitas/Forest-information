@@ -1,10 +1,10 @@
-import { RoutEs } from './RoutEs/routes'
+import { Routes } from './Routes/routes'
 
 function App() {
 
   return (
     <div className="App">
-      <RoutEs />
+      <Routes />
     </div>
   )
 }
