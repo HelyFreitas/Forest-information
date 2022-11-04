@@ -22,7 +22,7 @@ export const Signin = () => {
         <form className="form-signin" autoComplete="off">
           <section className="email-signin">
             <label htmlFor="email">E-mail:</label>
-            {/*<Envelope className="envelope-signin" size={20} color="#86cc16" />*/}
+            <Envelope className="envelope-signin" size={20} color="#86cc16" />
             <input
               className="input-signin"
               type="email"
