@@ -20,9 +20,9 @@ export const GlobalStyle = createGlobalStyle`
         background-repeat: no-repeat;
         background-size: cover;
 
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: center; */
 
         font-family: 'Poppins', sans-serif;
     }

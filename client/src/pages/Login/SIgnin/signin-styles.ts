@@ -11,6 +11,12 @@ export const SigninContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
   @media screen and (max-width: 488px) {
     width: 24rem;
@@ -19,10 +25,14 @@ export const SigninContainer = styled.div`
   @media screen and (max-width: 375px) {
     width: 22rem;
   }
+
+  @media screen and (max-width: 340px) {
+    width: 18rem;
+  }
 `;
 
 export const Header = styled.header`
-  margin-top: 2em;
+  margin-top: 1em;
   margin-bottom: 3em;
 
   display: flex;
@@ -36,6 +46,10 @@ export const Header = styled.header`
 
     @media screen and (max-width: 375px) {
       font-size: 2rem;
+    }
+
+    @media screen and (max-width: 340px) {
+      font-size: 1.8rem;
     }
   }
 `;
@@ -75,6 +89,8 @@ export const Main = styled.main`
 
     outline: none;
 
+    transition: .4s ease-in-out;
+
     &::placeholder {
       color: #4d7c0f;
 
@@ -82,8 +98,18 @@ export const Main = styled.main`
       font-weight: 600;
     }
 
+    &:focus{
+      border: 2px solid #facc15;
+
+      transition: .4s ease-in-out;
+    }
+
     @media screen and (max-width: 488px) {
       width: 20rem;
+    }
+
+    @media screen and (max-width: 340px) {
+      width: 16rem;
     }
   }
 
@@ -97,6 +123,11 @@ export const Main = styled.main`
     @media screen and (max-width: 488px) {
       position: absolute;
       left: 290px;
+    }
+
+    @media screen and (max-width: 340px) {
+      position: absolute;
+      left: 225px;
     }
   }
 
@@ -134,6 +165,10 @@ export const Main = styled.main`
     @media screen and (max-width: 488px) {
       width: 20rem;
     }
+
+    @media screen and (max-width: 340px) {
+      width: 16rem;
+    }
   }
 `;
 
@@ -168,6 +203,12 @@ export const Footer = styled.footer`
       filter: brightness(0.6);
       transition: 0.4s ease-in-out;
     }
+
+    @media screen and (max-width: 340px) {
+      font-size: 14px;
+
+      padding-right: 30px;
+    }
   }
 
   .forgot-pass-signin {
@@ -180,6 +221,10 @@ export const Footer = styled.footer`
     &:hover {
       filter: brightness(0.6);
       transition: 0.4s ease-in-out;
+    }
+
+    @media screen and (max-width: 340px) {
+      font-size: 14px;
     }
   }
 `;
